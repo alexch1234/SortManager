@@ -83,8 +83,8 @@ public class PerformanceTests {
     }
 
     @Test
-    public void performanceWith20000elements(){
-        int sizeOfArray = 20000;
+    public void performanceWith100elements(){
+        int sizeOfArray = 100;
         List<Integer> randomNumbers = new ArrayList<>();
         for (int i = 0; i < sizeOfArray; i++) {
             randomNumbers.add(i);
@@ -116,8 +116,8 @@ public class PerformanceTests {
     }
 
     @Test
-    public void performanceWith30000elements(){
-        int sizeOfArray = 30000;
+    public void performanceWith100000elements(){
+        int sizeOfArray = 100000;
         List<Integer> randomNumbers = new ArrayList<>();
         for (int i = 0; i < sizeOfArray; i++) {
             randomNumbers.add(i);
