@@ -1,5 +1,5 @@
 package com.sparta.alex.start;
 
-public enum ArrayType {
+public enum ArrayTypes {
     RANDOM, INPUT, UNIQUE_RANDOM
 }

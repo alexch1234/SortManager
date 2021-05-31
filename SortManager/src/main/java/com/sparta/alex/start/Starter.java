@@ -1,6 +1,5 @@
 package com.sparta.alex.start;
 
-import com.sparta.alex.binaryTree.BinaryTreeImplementation;
 import com.sparta.alex.exceptions.InvalidInputException;
 import com.sparta.alex.sorters.Sorter;
 import com.sparta.alex.sorters.SorterFactory;
@@ -49,11 +48,11 @@ public class Starter {
         try {
             typeOfArray = InputScanner.getInt("\nWhat type of array would you like to sort?\npress 1 for a random array\npress 2 to enter your own values");
             if (typeOfArray == 1 && typeOfSorter != 3) {
-                arrayToSort = ArrayFactory.createArray(ArrayType.RANDOM, lengthOfArray);
+                arrayToSort = ArrayFactory.createArray(ArrayTypes.RANDOM, lengthOfArray);
             } else if (typeOfArray == 1) {
-                arrayToSort = ArrayFactory.createArray(ArrayType.UNIQUE_RANDOM, lengthOfArray);
+                arrayToSort = ArrayFactory.createArray(ArrayTypes.UNIQUE_RANDOM, lengthOfArray);
             } else if (typeOfArray == 2) {
-                arrayToSort = ArrayFactory.createArray(ArrayType.INPUT, lengthOfArray);
+                arrayToSort = ArrayFactory.createArray(ArrayTypes.INPUT, lengthOfArray);
             } else {
                 throw new InvalidInputException("Invalid type of array entered. Exiting program.");
             }
